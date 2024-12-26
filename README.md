@@ -30,9 +30,9 @@
 
 
 <!-- PROJECT LOGO -->
-  <h3 align="center">自動產生查房筆記</h3>
+  <h3 align="center">自動產生麻醉諮詢仿單</h3>
   <p align="center">
-    自動抓取資料並產生查房筆記
+    自動抓取資料並產生麻醉諮詢仿單
   </p>
 </div>
 
@@ -69,7 +69,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-網路爬蟲可以自動爬取資料，並生成word 的查房摘要
+網路爬蟲可以自動爬取資料，並生成pdf 的麻醉諮詢仿單
 如果需要執行檔請使用連結:[執行檔連結](https://github.com/max870121/VGH_web/raw/refs/heads/main/Auto_generate_patientlist_exe_Ver2.2.zip)
 
 ***注意***
@@ -115,8 +115,8 @@ To get a local copy up and running follow these simple example steps.
 
 1. 打帳號
 2. 打密碼
-3. 打需要產生摘要的醫師燈號 (4碼)
-4. 會在相同的資料夾產生 醫師燈號.docx
+3. 打病歷號
+4. 會在相同的資料夾產生 病房_床號_病歷號 (EX: A101_01_123456789 )
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,8 +124,8 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Make table
-- [ ] Auto generate admission note
+- [x] Auto fill pdf
+- [ ] Add Anethesia method
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
