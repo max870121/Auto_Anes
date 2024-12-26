@@ -250,7 +250,7 @@ while not ID=="":
     OP_Dx=OP["OP_Dx"]
     OP_Dx=OP_Dx.split()
     OP_Dx=" ".join(OP_Dx)
-    if len(OP_Dx)>20:
+    if len(OP_Dx)>30:
         add_text_with_wrap_to_pdf("PreOP_Anes.pdf", "output.pdf", OP_Dx, 165, 697, 150, 10)
     else:
         add_text_with_wrap_to_pdf("PreOP_Anes.pdf", "output.pdf", OP_Dx, 165, 715, 150, 10)
@@ -259,10 +259,15 @@ while not ID=="":
     OP_name=OP["OP_name"]
     OP_name=OP_name.split()
     OP_name=" ".join(OP_name)
-    if len(OP_name)>20:
+    if len(OP_name)>30:
         add_text_with_wrap_to_pdf("output.pdf", "output.pdf", OP_name, 425, 697, 150, 10)
     else:
         add_text_with_wrap_to_pdf("output.pdf", "output.pdf", OP_name, 425, 715, 150, 10)
+
+    Anes=OP["Anes"]
+    add_text_with_wrap_to_pdf("output.pdf", "output.pdf", Anes, 435, 610, 150, 10)
+
+
     
     # 病歷號
     add_text_with_wrap_to_pdf("output.pdf", "output.pdf", ID, 380, 764)
